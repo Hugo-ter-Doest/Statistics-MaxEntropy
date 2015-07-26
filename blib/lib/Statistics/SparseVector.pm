@@ -232,10 +232,10 @@ sub to_Bin {
     $s = "";
     for ($i = 0; $i < $self->{N}; $i++) {
 	if (defined($self->{VECTOR}{$i})) {
-	    $s .= "1$sep";
+	    $s = "1$sep" . $s;
 	}
 	else {
-	    $s .= "0$sep";
+	    $s = "0$sep" . $s;
 	}
     }
     return($s);

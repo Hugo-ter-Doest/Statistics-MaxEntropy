@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-#!/Utils/bin/perl5.00502
 
 print "1..7\n";
 $i = 1;
@@ -65,7 +64,7 @@ $i++;
 # remove the last bit of $vec
 $othervec->Interval_Substitute("", $othervec->Size()-1, 1, 0, 0);
 if ($othervec->to_Bin() eq  "0100000001000") {
-    print "ok $i\n";
+    print "ok $i\n"; 
 }
 else {
     print "not ok $i\n";
